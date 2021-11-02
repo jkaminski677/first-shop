@@ -408,7 +408,10 @@ div{
 
 
 .foot{
+    position: static;
     height: 230px;
+    bottom: 0;
+    left: 0;
     width: 100%;
     background-color: var(--background-color-brown);
     display: grid;
@@ -658,8 +661,9 @@ input[type=text]:focus{
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 .contact_end{
+    position: relative;
     margin: 0;
-    height:750px;
+    min-height: 50vw;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -669,7 +673,7 @@ input[type=text]:focus{
     z-index: -1;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 50vw;
     /* background-image: linear-gradient(20deg, rgb(236, 189, 134) 10%, rgb(240, 200, 240) 55%, rgba(180, 241, 252, 0.993) 93%); */
 }
 .section::before{
@@ -684,8 +688,8 @@ input[type=text]:focus{
 
 section .container{
     position: relative;
-    min-width:1100px;
-    min-height: 550px;
+    min-width: 200px;
+    min-height: 350px;
     padding-top: 30px;
     display: flex;
     z-index: 1000;
@@ -694,7 +698,8 @@ section .container{
 section .container .contactInfo {
     position: absolute;
     top:70px;
-    left: calc(20% - 180px);;
+    /* left: calc(20% - 180px); */
+    left: 30px;
     width: 350px;
     height: calc(100% - 80px);
     background: rgb(231, 121, 231);
