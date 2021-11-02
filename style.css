@@ -720,7 +720,7 @@ section .container .contactInfo h2 {
 section .container .contactInfo .info {
     position: relative;
     margin: 20px 0;
-
+    width: auto;
 }
 
 section .container .contactInfo .info li {
@@ -735,12 +735,14 @@ section .container .contactInfo .info li {
 section .container .contactInfo .info li span:nth-child(1) {
     width: 30px;
     min-width: 30px;
+    
 }
 
 section .container .contactInfo .info li span:nth-child(1) img {
     max-width: 100%;
     filter: invert(1);
     opacity: 0.5;
+    
 }
 
 section .container .contactInfo .info li span:nth-child(2) {
@@ -749,7 +751,6 @@ section .container .contactInfo .info li span:nth-child(2) {
     font-weight: 300;
     opacity: 0.5;
     transition: all 0.1s ease-in-out;
-
 }
 
 section .container .contactInfo .info li:hover span:nth-child(1) img,
@@ -827,7 +828,7 @@ section .container .contactForm .formBox .inputBox1 {
 }
 
 section .container .contactForm .formBox .inputBox .w50 {
-    width: 47%;
+    width: auto;
 }
 
 section .container .contactForm .formBox .inputBox .w100 {
@@ -871,4 +872,91 @@ section .container .contactForm .formBox .inputBox textarea:valid ~ span {
     font-weight: 400;
     letter-spacing: 1px;
     color: var(--color-on-the-picture);
+}
+
+@media screen and (max-width: 1500px){
+    .contact_end{
+        height: 600px;
+    }
+}
+
+
+@media screen and (max-width: 980px){
+    section .container .contactForm {
+        margin-left: 110px;
+    }
+    section .container .contactInfo {
+        width: 280px;
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 880px){
+    section .container .contactForm .formBox .inputBox span {
+        font-size: 14px;
+        
+    }
+}
+
+@media screen and (max-width: 780px){
+    section .container .contactForm {
+        margin-left: 60px;
+    }
+    
+    section .container .contactInfo {
+        left: 30px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    section .container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        border: 2px solid peru;
+    }
+    section .container .contactInfo {
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+        top:30px;
+        align-self: center;
+        width: 60%;
+        height: 260px;
+        background: rgb(231, 121, 231);
+        z-index: 1;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    }
+    section .container .contactInfo .info {
+        margin-left: -20px;
+    }
+    section .container .contactInfo .sci {
+        margin-left: 0px;
+    }
+    section .container .contactInfo .info li span:nth-child(2) {
+        font-size: 12px;
+        border: 2px solid peru;
+    }
+
+
+
+    section .container .contactForm {
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+        /* padding: 70px 50px; */
+        background: #fff;
+        /* margin-left: 10px;
+        margin-right: 10px; */
+        /* padding-left: 20px; */
+        margin: 10px;
+        padding: 40px;
+        width: 80%;
+        height: auto;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+
+    }
+    
 }
