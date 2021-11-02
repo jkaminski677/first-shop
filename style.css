@@ -663,7 +663,7 @@ input[type=text]:focus{
 .contact_end{
     position: relative;
     margin: 0;
-    min-height: 50vw;
+    min-height: 40vw;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -699,7 +699,7 @@ section .container .contactInfo {
     position: absolute;
     top:70px;
     /* left: calc(20% - 180px); */
-    left: 30px;
+    left: 70px;
     width: 350px;
     height: calc(100% - 80px);
     background: rgb(231, 121, 231);
@@ -713,7 +713,7 @@ section .container .contactInfo {
 
 section .container .contactInfo h2 {
     color: #fff;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 500;
 }
 
@@ -793,17 +793,17 @@ section .container .contactForm {
     position: absolute;
     padding: 70px 50px;
     background: #fff;
-    margin-left: 150px;
-    padding-left: 450px;
+    margin-left: 200px;
+    padding-left: 350px;
     padding-top: 80px;
-    width: calc(100% - 250px);
+    width: 80%;
     height: 90%;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 section .container .contactForm h2 {
     color: #0f3959;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 500;
 }
 
