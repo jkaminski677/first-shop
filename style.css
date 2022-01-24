@@ -105,7 +105,7 @@ div{
 @media screen and (max-width: 640px) {
     #site-header{
         display: list-item;
-        height: 410px;
+        height: 210px;
     }
     .menu, .search{
         width: 100%;
@@ -130,12 +130,13 @@ div{
         padding-left: 80px;
     }
     .bag{
-        width: 30px;
-        height: 30px;
-        margin-left: 30px;
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
     }
     .home, .shop, .about, .contact, .search {
-        padding: 15px;
+        padding: 5px;
+        font-size: 18px;
     }
 }
 
