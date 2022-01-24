@@ -1076,15 +1076,19 @@ section .container .contactForm .formBox .inputBox textarea:valid ~ span {
 }
 
 @media screen and (max-width: 640px){
+    /* .container{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 70% 50% 50% 50% 30%;
+    } */
     section .container {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 50% 50%;
-        border: 2px solid peru;
+        grid-template-rows: 70% 50% 50% 50% 30%;
     }
     section .container .contactInfo {
         grid-column: 1 / 1;
-        grid-row: 2 / 2;
+        grid-row: 1 / 1;
         top:30px;
         align-self: center;
         width: 60%;
@@ -1105,14 +1109,11 @@ section .container .contactForm .formBox .inputBox textarea:valid ~ span {
     }
     section .container .contactInfo .info li span:nth-child(2) {
         font-size: 12px;
-        border: 2px solid peru;
     }
-
-
 
     section .container .contactForm {
         grid-column: 1 / 1;
-        grid-row: 1 / 1;
+        grid-row: 5 / 5;
         /* padding: 70px 50px; */
         background: #fff;
         /* margin-left: 10px;
@@ -1120,7 +1121,7 @@ section .container .contactForm .formBox .inputBox textarea:valid ~ span {
         /* padding-left: 20px; */
         margin: 10px;
         padding: 40px;
-        width: 80%;
+        width: 70%;
         height: auto;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 
