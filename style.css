@@ -1081,6 +1081,9 @@ section .container .contactForm .formBox .inputBox textarea:valid ~ span {
         grid-template-columns: 100%;
         grid-template-rows: 70% 50% 50% 50% 30%;
     } */
+    .contact_end{
+        height: 850px;
+    }
     section .container {
         display: grid;
         grid-template-columns: 100%;
@@ -1089,7 +1092,7 @@ section .container .contactForm .formBox .inputBox textarea:valid ~ span {
     section .container .contactInfo {
         grid-column: 1 / 1;
         grid-row: 1 / 1;
-        top:30px;
+        top: 0px;
         align-self: center;
         width: 60%;
         height: 260px;
@@ -1120,6 +1123,7 @@ section .container .contactForm .formBox .inputBox textarea:valid ~ span {
         margin-right: 10px; */
         /* padding-left: 20px; */
         margin: 10px;
+        margin-top: 80px;
         padding: 40px;
         width: 70%;
         height: auto;
