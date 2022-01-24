@@ -1029,6 +1029,9 @@ section .container .contactForm .formBox .inputBox span {
     transition: 0.3s;
     pointer-events: none;
 }
+section .container .contactForm .formBox .w50 textarea {
+    height: 80px;
+}
 
 section .container .contactForm .formBox .inputBox input:focus ~ span,
 section .container .contactForm .formBox .inputBox textarea:focus ~ span,
@@ -1082,16 +1085,16 @@ section .container .contactForm .formBox .inputBox textarea:valid ~ span {
         grid-template-rows: 70% 50% 50% 50% 30%;
     } */
     .contact_end{
-        height: 850px;
+        height: 820px;
     }
     section .container {
-        display: grid;
+        /* display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 70% 50% 50% 50% 30%;
+        grid-template-rows: 70% 30%; */
     }
     section .container .contactInfo {
-        grid-column: 1 / 1;
-        grid-row: 1 / 1;
+        /* grid-column: 1 / 1;
+        grid-row: 2 / 2; */
         top: 0px;
         align-self: center;
         width: 60%;
@@ -1099,6 +1102,7 @@ section .container .contactForm .formBox .inputBox textarea:valid ~ span {
         background: rgb(231, 121, 231);
         z-index: 1;
         padding: 40px;
+        margin-top: 430px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -1115,20 +1119,23 @@ section .container .contactForm .formBox .inputBox textarea:valid ~ span {
     }
 
     section .container .contactForm {
-        grid-column: 1 / 1;
-        grid-row: 5 / 5;
+        /* grid-column: 1 / 1;
+        grid-row: 1 / 1; */
         /* padding: 70px 50px; */
         background: #fff;
         /* margin-left: 10px;
         margin-right: 10px; */
         /* padding-left: 20px; */
         margin: 10px;
-        margin-top: 80px;
+        /* margin-top: 380px; */
         padding: 40px;
         width: 70%;
         height: auto;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 
+    }
+    section .container .contactForm .formBox .w50 textarea {
+        height: 40px;
     }
     
 }
