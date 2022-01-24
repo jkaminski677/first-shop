@@ -119,6 +119,7 @@ div{
     }
     ul.menu{
         align-self: center;
+        padding-bottom: 10px;
     }
     .logo_in{
         display: flex;
@@ -136,7 +137,7 @@ div{
     }
     .home, .shop, .about, .contact, .search {
         padding: 5px;
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 
@@ -1086,7 +1087,8 @@ section .container .contactForm .formBox .inputBox textarea:valid ~ span {
         grid-template-rows: 70% 50% 50% 50% 30%;
     } */
     .contact_end{
-        height: 820px;
+        margin-top: 80px;
+        height: 840px;
     }
     section .container {
         /* display: grid;
