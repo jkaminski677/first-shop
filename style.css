@@ -576,6 +576,134 @@ input[name="r"]{
 }
 
 
+/*----------------------------- FAQ page ---------------------------------- */
+.faq-heading{
+    border-bottom: #777;
+    padding: 80px 160px;
+    /* border: solid 2px peru; */
+
+}
+.faq-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+.hr-line{
+  width: 60%;
+  margin: auto;
+  
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    /* background-color: #eee; */
+    color: #444;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+.faq-body{
+   margin: auto;
+    /* text-align: center; */
+   width: 50%; 
+   padding: auto;
+   
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+    /* background-color: #F9F9F9; */
+}
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0 18px;
+    /* background-color: white; */
+    display: none;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+@media screen and (max-width: 740px){
+    .faq-heading{
+        padding: 80px;
+        margin-top: 80px;
+    }
+}
+
+
+
+
+/* ----------------------- End of FAQ ------- start of shipping ---------------------------- */
+
+
+/* --------------------------- Store policy ----------------------------- */
+
+.store-heading{
+    border-bottom: #777;
+    padding: 80px 160px;
+    /* border: solid 2px peru; */
+
+}
+.store-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+.hr-line{
+    width: 60%;
+    margin: auto;
+    
+  }
+  /* Style the buttons that are used to open and close the faq-page body */
+  .store-page {
+      /* background-color: #eee; */
+      color: #444;
+      cursor: pointer;
+      padding: 30px 20px;
+      width: 60%;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+      margin: auto;
+  }
+  .store-body{
+     margin: auto;
+      /* text-align: center; */
+     width: 50%; 
+     padding: auto;
+     padding-bottom: 40px;
+
+     
+  }
+
+/* ----------------------------- Payments ----------------------------------- */
+
+/* https://codepen.io/marcobiedermann/pen/yLVVpBY */
+
+
+
+
+
+
+/* ----------------------------- Footer ------------------------------------ */
+
 .foot{
     position: static;
     height: 230px;
