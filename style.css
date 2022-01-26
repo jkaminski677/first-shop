@@ -18,6 +18,7 @@ body{
     /* display: grid;
     min-height: 100%;
     grid-template-rows: 1fr auto; */
+    
 }
 
 div{
@@ -31,6 +32,7 @@ div{
     height: 110px;
     width: 100%;
     font-size: 25px;
+    z-index: 4;
     /* border-bottom: 1px double var(--color-on-the-picture);
     border-width: ; */
 }
@@ -104,6 +106,7 @@ div{
 
 @media screen and (max-width: 640px) {
     #site-header{
+        position: relative;
         display: list-item;
         height: 210px;
     }
@@ -141,6 +144,7 @@ div{
     }
 }
 
+
 .tytul{
     display: flex;
     flex-flow: wrap;
@@ -152,6 +156,7 @@ div{
     background-size: cover;
     justify-content: center;
     align-items: center;
+    /* padding-top: 110px ; */
 }
 
 .tytul h1{
@@ -252,10 +257,6 @@ div{
         font-size: 25px;
     }
 }
-
-
-
-
 
 
 .short_list{
@@ -594,6 +595,14 @@ input[name="r"]{
   margin: auto;
   
 }
+.hr-line2{
+    width: 97%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
 /* Style the buttons that are used to open and close the faq-page body */
 .faq-page {
     /* background-color: #eee; */
@@ -656,7 +665,8 @@ input[name="r"]{
 
 .store-heading{
     border-bottom: #777;
-    padding: 80px 160px;
+    padding: 80px 10%;
+    width: 60%;
     /* border: solid 2px peru; */
 
 }
@@ -665,39 +675,116 @@ input[name="r"]{
     justify-content: center;
     flex-direction: column;
     padding-bottom: 100px;
+    /* border: solid 2px peru; */
 }
-.hr-line{
-    width: 60%;
-    margin: auto;
-    
-  }
-  /* Style the buttons that are used to open and close the faq-page body */
-  .store-page {
-      /* background-color: #eee; */
-      color: #444;
-      cursor: pointer;
-      padding: 30px 20px;
-      width: 60%;
-      border: none;
-      outline: none;
-      transition: 0.4s;
-      margin: auto;
-  }
-  .store-body{
-     margin: auto;
-      /* text-align: center; */
-     width: 50%; 
-     padding: auto;
-     padding-bottom: 40px;
 
-     
-  }
+/* Style the buttons that are used to open and close the faq-page body */
+.store-page {
+    /* background-color: #eee; */
+    color: #444;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+.store-body{
+    margin: auto;
+    /* text-align: center; */
+    width: 50%; 
+    padding: auto;
+    padding-bottom: 40px;
+
+    
+}
 
 /* ----------------------------- Payments ----------------------------------- */
 
 /* https://codepen.io/marcobiedermann/pen/yLVVpBY */
 
+.buy_it {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    margin: 80px 0;
+    /* border: solid 2px peru; */
+    font-family: 'Poppins', sans-serif;
 
+}
+.phone {
+    width: 400px;
+    /* border:solid 2px peru; */
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background: rgb(231, 121, 231); */
+    background: rgb(179, 179, 179);
+    padding: 12px;
+}
+.aparat{
+    background: black;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-bottom: 4px;
+    margin-top: -3px;
+    z-index: 3;
+}
+.screen {
+    width: 99%;
+    background: rgb(255, 254, 248);
+    border-radius: 20px;
+    padding: 5px;
+
+}
+.upphonetext {
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 10px 2px;
+    color: rgb(253, 255, 235);
+    background: violet;
+}
+
+.upphonetext h2, .upphonetext address {
+    opacity: 0.8;
+}
+
+.payment_method {
+    /* background: rgb(164, 208, 255); */
+    background: rgb(231, 121, 231);
+    color: white;
+    border-radius: 5%;
+    padding: 10px 20px;
+    margin: 10px 2px;
+}
+
+.payment_method p {
+    font-size: 20px;
+}
+
+.form__radios {
+    width: 100%;
+    /* border:solid 2px peru; */
+
+}
+.form__radio {
+    display: flex;
+    flex-direction: row;
+    /* border:solid 2px peru; */
+}
+
+.form__radio p {
+    /* border:solid 2px peru; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
 
 
 
@@ -956,6 +1043,8 @@ input[type=text]:focus{
     }
 }
 
+/* ----------------------------- Contact ------------------------------- */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 .contact_end{
     position: relative;
@@ -1032,14 +1121,12 @@ section .container .contactInfo .info li {
 section .container .contactInfo .info li span:nth-child(1) {
     width: 30px;
     min-width: 30px;
-    
 }
 
 section .container .contactInfo .info li span:nth-child(1) img {
     max-width: 100%;
     filter: invert(1);
     opacity: 0.5;
-    
 }
 
 section .container .contactInfo .info li span:nth-child(2) {
