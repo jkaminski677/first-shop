@@ -620,13 +620,13 @@ input[name="r"]{
     /* text-align: center; */
    width: 50%; 
    padding: auto;
-   
+   display: none;
 }
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover)
-.active,
+ /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/* .active, */
 .faq-page:hover {
-    background-color: #F9F9F9; 
-} */
+    background-color: #e9b1df; 
+}
 /* Style the faq-page panel. Note: hidden by default */
 .faq-body {
     padding: 0 18px;
@@ -665,7 +665,7 @@ input[name="r"]{
 
 .store-heading{
     border-bottom: #777;
-    padding: 80px 10%;
+    padding: 0px 10%;
     width: 60%;
     /* border: solid 2px peru; */
 
@@ -1421,14 +1421,12 @@ section .container .contactForm .formBox .inputBox textarea:valid ~ span {
     height: 52px;
     top: -40px;
     display: flex;
-
-    /* display: none; */
+    padding-top: 110px;
 }
 
 .right_button{
     position: absolute;
     right: 50px;
-    bottom: 0px;
 }
 
 .chang_view_but 
@@ -1518,6 +1516,41 @@ section .container .contactForm .formBox .inputBox textarea:valid ~ span {
     margin-left: -17px;
     padding: 15px;
 }
+.thing_to_buy1 img{
+    margin-left: 20px;
+    transition: all 0.3s cubic-bezier(.29,-0.23,.3,1.55);
+}
+
+.thing_to_buy1 img:hover {
+    border-radius: 10px 0px;
+    z-index: 2;
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.thing_to_buy img{
+    transition: all 0.3s cubic-bezier(.29,-0.23,.3,1.55);
+}
+.thing_to_buy img:hover {
+    border-radius: 10px 0px;
+    z-index: 2;
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.thing_to_buy2 img{
+    transition: all 0.3s cubic-bezier(.29,-0.23,.3,1.55);
+}
+.thing_to_buy2 img:hover {
+    border-radius: 10px 0px;
+    z-index: 2;
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
 
 .thing_to_buy2 {
     width: auto;
@@ -1568,4 +1601,3 @@ section .container .contactForm .formBox .inputBox textarea:valid ~ span {
     width: auto;
     padding: 0 10px 0 10px;
 }
-
